@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>calculator tests</title>
+    <link rel="stylesheet" media="all" href="../node_modules/mocha/mocha.css">
+</head>
+<body>
+<div id="mocha"><p>Index</p></div>
+<div id="messages"></div>
+<div id="fixtures"></div>
+<script src="../node_modules/mocha/mocha.js"></script>
+<script src="../node_modules/chai/chai.js"></script>
+<script src="../src/buttons.js"></script>
+<script src="../src/expression.js"></script>
+<script src="../src/token.js"></script>
+<script src="../src/tstream.js"></script>
+<script>mocha.setup('bdd')</script>
+<script src="calculator.test.js"></script>
+<script>mocha.run();</script>
+</body>
+</html>

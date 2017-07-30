@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>lab2</title>
+    <link href="calculator.css" rel="stylesheet" type="text/css"/>
+    <script language="javascript" src="tstream.js"></script>
+    <script language="javascript" src="token.js"></script>
+    <script language="javascript" src="expression.js"></script>
+    <script language="javascript" src="buttons.js"></script>
+</head>
+<body>
+<div id="calculator">
+    <div id="calcu-head"><h6>简易计算器</h6></div>
+    <form name="calculator" action="" method="get">
+        <div id="in-screen">
+            <!--配置输入框，使用onfocus="this.blur();"避免键盘输入-->
+            <input type="text" name="inScreen" class="screen" value="" onfocus="this.blur();" />
+        </div>
+        <div id="out-screen">
+            <!--配置输出框，使用onfocus="this.blur();"避免键盘输入-->
+            <input type="text" name="outScreen" class="screen" value="" onfocus="this.blur();" />
+        </div>
+        <div id="calcu-btn">
+            <ul> <!--配置按钮-->
+                <li class="tool" onclick="seven()">7</li>
+                <li class="tool" onclick="eight()">8</li>
+                <li class="tool" onclick="nine()">9</li>
+                <li class="tool" onclick="back()">←</li>
+                <li class="tool" onclick="AC()">C</li>
+                <li class="tool" onclick="four()">4</li>
+                <li class="tool" onclick="five()">5</li>
+                <li class="tool" onclick="six()">6</li>
+                <li class="tool" onclick="multiply()">*</li>
+                <li class="tool" onclick="divide()">/</li>
+                <li class="tool" onclick="one()">1</li>
+                <li class="tool" onclick="two()">2</li>
+                <li class="tool" onclick="three()">3</li>
+                <li class="tool" onclick="add()">+</li>
+                <li class="tool" onclick="minus()">-</li>
+                <li class="tool" onclick="zero()">0</li>
+                <li class="tool" onclick="dzero()">00</li>
+                <li class="tool" onclick="point()">.</li>
+                <li class="tool" onclick="mod()">%</li>
+                <li class="tool" onclick="equal()">=</li>
+            </ul>
+        </div>
+    </form>
+</div>
+</body>
+</html>
